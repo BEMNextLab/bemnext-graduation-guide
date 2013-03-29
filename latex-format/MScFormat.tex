@@ -1,0 +1,51 @@
+\documentclass{stylesheets/BEMNextstyle}
+\begin{document}
+\ifthenelse {\boolean{PRINTVERSION}} {%
+}{
+% The front cover
+\ifthenelse {\boolean{PRINTVERSION}} {% do nothing
+	}{
+		%\includepdf{images/cover_front}
+		\newpage
+	}
+}
+\pagestyle{trail}
+\frontmatter
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Preface}
+\chapter*{Preface}
+Write your preface here.
+
+\tableofcontents
+\mainmatter
+
+\chapter{Introduction}
+\label{sec:introduction}
+Write the introduction here.
+
+\chapter{Methodology}
+\label{sec:introduction}
+Write the methodology here.
+
+\chapter{Experiment design}
+\label{sec:experimentdesign}
+Write the design of your experiments here.
+
+\chapter{Results}
+\label{sec:results}
+Write the results of your experiments here.
+
+\chapter{Discussion}
+\label{sec:discussion}
+Write the discussion here.
+
+\chapter{Conclusions}
+\label{sec:conclusions}
+Write the conclusions here.
+
+\chapter{Recommendations}
+\label{sec::recommendations}
+Write the recommendations here.
+
+\end{document}
